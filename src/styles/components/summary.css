@@ -1,0 +1,71 @@
+#card-summary {
+  width: 100%;
+  height: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.13);
+  position: relative;
+  background-color: #fff;
+}
+
+#card-summary h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#card-summary header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin: 11px 0;
+}
+
+#card-summary header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#card-summary section {
+  margin-left: 10px;
+}
+
+#card-summary section .contact-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#card-summary section .contact-details svg {
+  margin-right: 16px;
+}
+
+#card-summary section .contact-details span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#card-summary footer {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 17px 12px 0;
+}
+#card-summary footer .social-icon {
+  text-decoration: none;
+  color: #000;
+  transition: all ease 0.3;
+}
+
+#card-summary footer .social-icon:visited {
+  color: #000;
+}
+
+#card-summary footer .social-icon:hover {
+  opacity: 0.8;
+}
+
+#card-summary footer .social-icon:not(:last-child) {
+  margin-right: 14px;
+}

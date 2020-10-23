@@ -1,0 +1,63 @@
+.container-badge-activity-aux {
+  display: inline-block;
+}
+
+.container-badge-activity {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.container-badge-activity .number-activity {
+  height: 28px;
+  width: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+}
+
+.container-badge-activity span {
+  text-align: center;
+  margin-right: 8px;
+}
+
+/* Cores */
+
+.container-badge-activity.red .number-activity {
+  background-color: rgba(231, 76, 60, 1);
+}
+
+.container-badge-activity.red {
+  background-color: rgba(231, 76, 60, 0.3);
+}
+
+.container-badge-activity.blue .number-activity {
+  background-color: rgba(52, 152, 219, 1);
+}
+
+.container-badge-activity.blue {
+  background-color: rgba(52, 152, 219, 0.3);
+}
+
+.container-badge-activity.green .number-activity {
+  background-color: rgba(46, 204, 113, 1);
+}
+
+.container-badge-activity.green {
+  background-color: rgba(46, 204, 113, 0.3);
+}
+
+.container-badge-activity.yellow .number-activity {
+  background-color: rgba(241, 196, 15, 1);
+}
+
+.container-badge-activity.yellow {
+  background-color: rgba(241, 196, 15, 0.3);
+}

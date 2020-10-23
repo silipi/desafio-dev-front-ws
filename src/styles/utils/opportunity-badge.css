@@ -1,0 +1,43 @@
+.container-badge-opportunity {
+  display: inline-flex;
+  width: 180px;
+}
+
+.container-badge-opportunity #number-opportunity {
+  height: 48px;
+  width: 48px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.container-badge-opportunity #text-badge-opportunity {
+  margin: 0 16px;
+}
+
+.container-badge-opportunity #text-badge-opportunity span {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Cores */
+
+.container-badge-opportunity.red #number-opportunity {
+  background-color: rgba(231, 76, 60, 1);
+}
+
+.container-badge-opportunity.blue #number-opportunity {
+  background-color: rgba(52, 152, 219, 1);
+}
+
+.container-badge-opportunity.green #number-opportunity {
+  background-color: rgba(46, 204, 113, 1);
+}
+
+.container-badge-opportunity.grey #number-opportunity {
+  background-color: rgba(52, 73, 94, 1);
+}

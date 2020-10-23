@@ -1,0 +1,23 @@
+#card-financial {
+  width: 100%;
+  height: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.13);
+  background-color: #fff;
+}
+
+#card-financial h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#card-financial .charts-financial {
+  width: 100%;
+  height: 100%;
+}
+
+#card-financial .charts-financial .pie-chart {
+  width: 100%;
+  height: 100%;
+}

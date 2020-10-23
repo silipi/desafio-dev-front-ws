@@ -1,0 +1,13 @@
+.activity-details-container {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.activity-details-container .activity-details-icon {
+  margin-right: 14px;
+}
+
+.activity-details-container .activity-details-text h3 {
+  font-weight: 600;
+}

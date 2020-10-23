@@ -1,0 +1,57 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 26% 32% auto;
+  grid-template-rows: 35% 30% 35%;
+  grid-template-areas:
+    "summary map activity"
+    "opportunity credit activity"
+    "financial financial activity";
+}
+
+.summary-container {
+  grid-area: summary;
+  padding: 8px;
+}
+
+.map-container {
+  grid-area: map;
+  padding: 8px;
+}
+
+.activity-container {
+  grid-area: activity;
+  padding: 8px;
+}
+
+.opportunity-container {
+  grid-area: opportunity;
+  padding: 8px;
+}
+
+.credit-container {
+  grid-area: credit;
+  padding: 8px;
+}
+
+.financial-container {
+  grid-area: financial;
+  padding: 8px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 260px 260px 260px auto;
+    grid-template-areas:
+      "summary map"
+      "opportunity credit"
+      "financial financial"
+      "activity activity";
+  }
+}

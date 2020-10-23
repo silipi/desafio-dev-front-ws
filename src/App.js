@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Summary from './components/Summary';
+import Map from './components/Map';
+import Financial from './components/Financial';
+import Credit from './components/Credit';
+import Opportunity from './components/Opportunity';
+import Activity from './components/Activity';
+
+import './styles/app.css';
+import './styles/global.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <section className="summary-container">
+        <Summary />
+      </section>
+
+      <section className="map-container">
+        <Map />
+      </section>
+
+      <section className="financial-container">
+        <Financial />
+      </section>
+
+      <section className="opportunity-container">
+        <Opportunity />
+      </section>
+
+      <section className="activity-container">
+        <Activity />
+      </section>
+
+      <section className="credit-container">
+        <Credit />
+      </section>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+#card-credit {
+  width: 100%;
+  height: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.13);
+  background-color: #fff;
+}
+
+#card-credit h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#card-credit .credit-designed {
+  margin: 22px 0 16px 8px;
+  color: #3498db;
+}
+
+#card-credit .credit-avaliable {
+  margin-left: 8px;
+  color: #27ae60;
+}

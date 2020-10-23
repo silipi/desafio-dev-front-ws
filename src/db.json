@@ -1,0 +1,132 @@
+{
+  "id": "763be98e-14d4-11eb-adc1-0242ac120002",
+
+  "customer": {
+    "name": "John Doe",
+    "company": "Acme Fruits Inc.",
+    "contact": {
+      "emails": [
+        {
+          "email": "john.doe@acmefruits.com",
+          "type": "Trabalho"
+        },
+        {
+          "email": "john.doe@domain.com",
+          "type": "Pessoal"
+        }
+      ],
+      "phones": [
+        {
+          "number": "(45) 99911-9942",
+          "type": "Pessoal"
+        }
+      ] 
+    },
+    "social": {
+      "facebook": "https://facebook.com/johnexample",
+      "instagram": "https://instagram.com/johnexample",
+      "twitter": "https://twitter.com/johnexample",
+      "linkedin": "https://linkedin.com/in/johnexample",
+      "whatsapp": "(45) 99911-9942"
+    },
+    "address": [{
+      "title": "Casa",
+      "city": "Cascavel",
+      "uf": "PR",
+      "street": "Rua Suíça",
+      "number": "2655",
+      "coordinates": {
+        "x": -24.9841483,
+        "y": -53.423017
+      }
+    }]
+  },
+
+  "credit": {
+    "designed": 12200,
+    "avaliable": 4349.90
+  },
+
+  "opportunity": {
+    "win": {
+      "description": "Ganhas",
+      "quantity": 7,
+      "value": 25499.90
+    },
+    "lost": {
+      "description": "Perdidas",
+      "quantity": 3,
+      "value": 1240
+    },
+    "open": {
+      "description": "Abertas",
+      "quantity": 5,
+      "value": 32300
+    },
+    "discarded": {
+      "description": "Descartadas",
+      "quantity": 2,
+      "value": 349.98
+    }
+  },
+
+  "activity": [
+    {
+      "type": "delay",
+      "items": [
+        {
+        "icon": "phone",
+        "title": "Ligação de agendamento de reunião",
+        "person": "Erica Collins",
+        "date": "Em atraso por 02 dias"
+        }
+      ]
+    },
+    {
+      "type": "expected",
+      "items": [
+        {
+          "icon": "meeting",
+          "title": "Reunião orçamento",
+          "person": "Abigail Fisher",
+          "date": "Hoje às 15h"
+        },
+        {
+          "icon": "email",
+          "title": "E-mail documentação",
+          "person": "Jeffery King",
+          "date": "Amanhã às 09:45h"
+        },
+        {
+          "icon": "agenda",
+          "title": "Almoço coorporativo",
+          "person": "Lawrence Kelly",
+          "date": "Amanhã às 15h"
+        }
+      ]
+    },
+    {
+      "type": "finished",
+      "items": [
+        {
+          "icon": "agenda",
+          "title": "Apresentação feira agrícola",
+          "person": "Caroline Diaz",
+          "date": "Segunda-feira (17/10/2020) às 08h"
+        },
+        {
+          "icon": "email",
+          "title": "E-mail orçamento",
+          "person": "Arthur Clark",
+          "date": "Terça-feira (18/10/2020) às 13h"
+        },
+        {
+          "icon": "email",
+          "title": "E-mail contrato",
+          "person": "Frieda Howard",
+          "date": "Quarta-feira (19/10/2020) às 10h"
+        }
+      ]
+    }
+  ]
+}
