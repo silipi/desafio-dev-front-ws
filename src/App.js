@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import Summary from './components/Summary';
 import Map from './components/Map';
@@ -9,36 +10,71 @@ import Activity from './components/Activity';
 
 import './styles/app.css';
 import './styles/global.css';
+import Spinner from './components/utils/Spinner';
 
+export default class App extends React.Component {
 
-function App() {
-  return (
-    <div className="container">
-      <section className="summary-container">
-        <Summary />
-      </section>
+  constructor(props) {
+    super(props);
 
-      <section className="map-container">
-        <Map />
-      </section>
+    this.state = {
+      customer: {},
+      credit: {},
+      opportunity: {},
+      activity: [],
+      isLoading: true
+    };
+  }
 
-      <section className="financial-container">
-        <Financial />
-      </section>
+  componentDidMount() {
 
-      <section className="opportunity-container">
-        <Opportunity />
-      </section>
+      axios.get('db.json').then(res => {
+        const { customer, credit, opportunity, activity } = res.data;
 
-      <section className="activity-container">
-        <Activity />
-      </section>
+        this.setState({
+          customer,
+          credit,
+          opportunity,
+          activity,
+          isLoading: false
+        })  
+      })
 
-      <section className="credit-container">
-        <Credit />
-      </section>
-    </div>
-  );
+  }
+  
+  render() {
+    const { customer, credit, opportunity, activity, isLoading } = this.state;
+
+    if (isLoading) {
+      return <Spinner />
+    } else {
+      return (
+        <div className="container">
+          <section className="summary-container">
+            <Summary data={customer}/>
+          </section>
+
+          <section className="map-container">
+            <Map data={customer}/>
+          </section>
+
+          <section className="financial-container">
+            <Financial data={opportunity}/>
+          </section>
+
+          <section className="opportunity-container">
+            <Opportunity data={opportunity}/>
+          </section>
+
+          <section className="activity-container">
+            <Activity data={activity}/>
+          </section>
+
+          <section className="credit-container">
+            <Credit data={credit}/>
+          </section>
+        </div>
+      );
+    }
+  }
 }
-
-export default App;

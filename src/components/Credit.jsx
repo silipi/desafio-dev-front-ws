@@ -1,30 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helper from './utils/Helper'
 
 import '../styles/components/credit.css';
 
-export default function Credit() {
-  const [credit, setCredit] = useState({});
+export default class Credit extends React.Component {
+  static propTypes = {
+    data: PropTypes.object.isRequired
+  }
 
-  useEffect(() => {
-    axios.get('db.json')
-    .then(res => {
-      const creditData = res.data.credit;
-      setCredit(creditData)})
-    }, 
-  []);
+  render() {
+    const { designed, avaliable } = this.props.data;
 
-  return (
-    <div id="card-credit">
-      <h1>Limite de crédito:</h1>
-      <div className="credit-designed">
-        <h2>{credit?.designed ? new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(credit?.designed) : "-"}</h2>
-        <span>Concebido</span>
+    return (
+      <div id="card-credit">
+        <h1>Limite de crédito:</h1>
+
+        <div className="credit-designed">
+          <h2>{designed ? Helper.convertReal(designed) : "-"}</h2>
+          <span>Concebido</span>
+        </div>
+
+        <div className="credit-avaliable">
+          <h2>{avaliable ? Helper.convertReal(avaliable) : "-"}</h2>
+          <span>Disponível</span>
+        </div>
       </div>
-      <div className="credit-avaliable">
-        <h2>{credit?.avaliable ? new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(credit?.avaliable) : "-"}</h2>
-        <span>Disponível</span>
-      </div>
-    </div>
-  )
+    )
+  }
 }

@@ -4,6 +4,12 @@ import PropTypes from 'prop-types';
 import '../../styles/utils/activity-badge.css';
 
 export default class ActivityBadge extends React.Component {
+  static propTypes = {
+    color: PropTypes.string,
+    description: PropTypes.string,
+    quantity: PropTypes.number
+  }
+
   render() {
     const { color, description, quantity } = this.props;
 
@@ -17,10 +23,4 @@ export default class ActivityBadge extends React.Component {
      
     )
   }
-}
-
-ActivityBadge.propTypes = {
-  color: PropTypes.string,
-  description: PropTypes.string,
-  quantity: PropTypes.number
 }

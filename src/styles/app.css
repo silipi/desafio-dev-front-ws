@@ -55,3 +55,19 @@
       "activity activity";
   }
 }
+
+@media (max-width: 860px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px 300px 300px auto;
+    grid-template-areas:
+      "summary"
+      "map"
+      "opportunity"
+      "financial"
+      "credit"
+      "activity";
+  }
+}

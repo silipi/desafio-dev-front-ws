@@ -4,6 +4,13 @@ import PropTypes from 'prop-types';
 import '../../styles/utils/activity-details.css';
 
 export default class ActivityDetails extends Component {
+  static propTypes = {
+    icon: PropTypes.any,
+    title: PropTypes.string.isRequired,
+    person: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired
+  }
+
   render() {
     const { icon, title, person, date } = this.props;
 
@@ -19,11 +26,4 @@ export default class ActivityDetails extends Component {
       </div>
     )
   }
-}
-
-ActivityDetails.propTypes = {
-  icon: PropTypes.any,
-  title: PropTypes.string.isRequired,
-  person: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired
 }

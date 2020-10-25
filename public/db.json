@@ -30,7 +30,7 @@
       "whatsapp": "+5545999119942"
     },
     "address": [
-        {
+      {
         "title": "Casa",
         "city": "Cascavel",
         "uf": "PR",
@@ -46,6 +46,7 @@
   },
 
   "opportunity": {
+    "total": 16,
     "win": {
       "description": "Ganhas",
       "quantity": 7,
@@ -58,7 +59,7 @@
     },
     "open": {
       "description": "Abertas",
-      "quantity": 5,
+      "quantity": 4,
       "value": 32300
     },
     "discarded": {

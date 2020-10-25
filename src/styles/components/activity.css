@@ -29,8 +29,6 @@
 }
 
 #container-activity .activities-general {
-  border-left: 2px solid rgb(58, 58, 61);
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   margin-top: 8px;
@@ -41,6 +39,8 @@
 }
 
 #container-activity .activities-general .activity-info {
-  padding-left: 18px;
-  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin: 8px 0;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
